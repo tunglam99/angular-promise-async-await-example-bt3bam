@@ -27,6 +27,8 @@ export class AppComponent {
     this.append('start');
     doSomething()
       .then(x => {
+
+        // x ở đây chính là kết quả reosolve trong hàm doSomething()
         console.log(x)
         this.append(x);
         return doSomething(2);
